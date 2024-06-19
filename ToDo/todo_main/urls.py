@@ -19,7 +19,7 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home),
+    path('', views.home, name="home"),
 
     # To do
     path('todo/', include('todo.urls'))
